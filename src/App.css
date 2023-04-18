@@ -1,6 +1,40 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --color-light: #c8c8c8;
+  --color-yellow: #ffd500;
+  --color-dark: #383838;
+}
+
+body {
+  background: var(--color-dark);
+}
+
+.btn-custom {
+  color: var(--color-dark);
+  background: var(--color-yellow);
+  border-radius: 0;
+}
+.btn-custom:hover {
+  color: var(--color-yellow);
+  background: var(--color-dark);
+  border-radius: 0;
+  border: 1px solid var(--color-light);
+}
+
+.btn-custom-2{
+  color: var(--color-yellow);
+  background: var(--color-dark);
+  border-radius: 0;
+}
+
+.btn-custom-2:hover {
+  color: var(--color-dark);
+  background: var(--color-yellow);
+  border-radius: 0;
+  border: 1px solid var(--color-light);
+}
