@@ -1,0 +1,27 @@
+.card-custom {
+    min-height: 500px;
+}
+
+.card-body-custom {
+    height: 150px;
+    position: relative;
+}
+
+.badge-custom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    border: 2px solid var(--color-dark);
+    border-top: none;
+    border-right: none;
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    background-color: var(--color-orange) !important;
+}
+
+.card-price {
+    text-align: center;
+    background-color: var(--color-dark);
+    width: 50%;
+}

@@ -1,6 +1,6 @@
 .main-header-custom{
-    background: url('../../../public/img/star-wars-1.jpg');
+    background: url('../../../public/img/beer-header.jpg');
     background-position: center;
     background-size: cover;
-    height: 70vh;
+    height: 50vh;
 }
