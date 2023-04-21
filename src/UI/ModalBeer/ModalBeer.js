@@ -13,7 +13,6 @@ function ModalBeer(props) {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    console.log(beer);
     return (
 
         <>
@@ -54,10 +53,10 @@ function ModalBeer(props) {
                             
 
 
-                            {beer.food_pairing && beer.food_pairing.map((food) => {
+                            {beer.food_pairing && beer.food_pairing.map((food, index) => {
 
                                 return (
-                                    <p className="fst-italic">{food}</p>
+                                    <p key={index} className="fst-italic">{food}</p>
                                 )
                             })}
 

@@ -19,7 +19,9 @@ function ShowBeer() {
   }, [])
 
   const idNumber = Number(id);
+
   const beer = beers.find((beer) => beer.id === idNumber);
+
 
   return (
 
@@ -34,15 +36,15 @@ function ShowBeer() {
 
         </div>
 
-        <div className="row my-5">
 
-          {/* related beer by gradi */}
+        <div className="row my-5">
 
           {beer &&
 
-            <RelatedBeers 
+            <RelatedBeers
               beer={beer}
-              beers={beers}/>
+              beers={beers} />
+
           }
         </div>
       </section>

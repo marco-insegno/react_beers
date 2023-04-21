@@ -47,6 +47,7 @@ h6 {
   color: var(--color-orange);
   background: var(--color-dark);
   border-radius: 0;
+  border: 1px solid var(--color-orange);
 }
 
 .btn-custom-2:hover {
@@ -54,4 +55,9 @@ h6 {
   background: var(--color-orange);
   border-radius: 0;
   border: 1px solid var(--color-light);
+  border: 1px solid var(--color-orange);
+}
+
+.form-control:focus{
+  box-shadow: 0 0 0 .25rem #e66a05a0;
 }

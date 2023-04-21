@@ -1,0 +1,12 @@
+.adv{
+    background: var(--color-orange);
+    color: var(--color-white);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-bottom-left-radius: 60px ;
+    border-bottom-right-radius: 60px ;
+    text-align: center;
+}

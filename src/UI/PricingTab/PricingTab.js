@@ -3,6 +3,8 @@ import Table from 'react-bootstrap/Table';
 import { useState, useEffect } from 'react'
 import './PricingTab.css'
 import ModalBeer from '../ModalBeer/ModalBeer';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -21,10 +23,28 @@ function PricingTab() {
 
     return (
 
-        <section className="container my-5">
+        <section className="container mt-5">
 
             <div className="row">
-                <h2>Prices 2023</h2>
+
+                <div className="col-12">
+                    <h2>Prices 2023</h2>
+                </div>
+
+            </div>
+
+            <div className="row d-flex justify-content-end my-3">
+            <div className="col-12 col-md-4">
+                    <Form className="d-flex">
+                        <Form.Control
+                            type="search"
+                            placeholder="Search..."
+                            className="me-2"
+                            aria-label="Search"
+                        />
+                        <button className='btn btn-custom-2'>Search</button>
+                    </Form>
+                </div>
             </div>
             <div className="row">
                 <div className="col-12">
