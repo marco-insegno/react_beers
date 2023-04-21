@@ -4,9 +4,6 @@ import { useState, useEffect } from 'react'
 import './PricingTab.css'
 import ModalBeer from '../ModalBeer/ModalBeer';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-
-
 
 
 function PricingTab() {
@@ -50,6 +47,7 @@ function PricingTab() {
                     </Form>
                 </div>
             </div>
+            
             <div className="row">
                 <div className="col-12">
 

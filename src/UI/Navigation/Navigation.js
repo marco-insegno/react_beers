@@ -36,7 +36,7 @@ function Navigation() {
                     <Form className="d-flex mt-3 mt-lg-0">
                         <Form.Control
                             type="search"
-                            placeholder="Search..."
+                            placeholder="Search beer..."
                             className="me-2 rounded-0"
                             aria-label="Search"
                         />
