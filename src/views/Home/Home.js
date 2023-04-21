@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import CardBeer from '../UI/CardBeer/CardBeer';
+import CardBeer from '../../UI/CardBeer/CardBeer';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,8 +21,6 @@ function Home() {
     }, [])
 
 
-    console.log(beers);
-
     return (
         <section className="container my-5 ">
             <div className="row">
@@ -35,7 +34,7 @@ function Home() {
 
                     return (
 
-                            <CardBeer beer={beer} key={beer.id} />
+                        <CardBeer beer={beer} key={beer.id} />
 
                     )
                 })}
@@ -44,7 +43,9 @@ function Home() {
             <div className="row justify-content-center mt-5">
                 <div className="col-12 col-md-4">
 
-                    <Button className='btn-custom w-100 p-5 fs-2'>All Beers...</Button>
+                    <Link to="/all-beers">
+                        <Button className='btn-custom w-100 p-5 fs-2'>All Beers...</Button>
+                    </Link>
                 </div>
             </div>
         </section>

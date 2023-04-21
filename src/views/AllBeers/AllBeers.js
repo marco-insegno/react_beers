@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import CardBeer from '../UI/CardBeer/CardBeer';
+import CardBeer from '../../UI/CardBeer/CardBeer';
 
 function AllBeers() {
 

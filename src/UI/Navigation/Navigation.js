@@ -6,18 +6,18 @@ import { Link } from 'react-router-dom';
 
 function Navigation() {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Container>
                 <Link to="/" className='nav-link'>
                 <Navbar.Brand>
-                    <img src="./logo.png" height="50px" alt="logo"/>
+                    <img src="/logo.png" height="50px" alt="logo"/>
                 </Navbar.Brand>
                 </Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Link to="/all-beers" className="nav-link">All Beers</Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <Link to="/pricing" className="nav-link">Pricing</Link>
                         <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">

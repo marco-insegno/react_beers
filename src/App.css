@@ -10,6 +10,8 @@
   --color-light: #c8c8c8;
   --color-orange: #e66b05;
   --color-dark: #383838;
+  --color-white:#fff;
+  --color-yellow:rgb(255, 230, 0);
 }
 
 body {

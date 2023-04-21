@@ -29,7 +29,7 @@ function CardBeer(props) {
                 <Card.Body className="card-body-custom">
                     <Card.Title className='text-uppercase my-4 text-center'>{beer.name.slice(0, 20)}</Card.Title>
                     <Card.Text as="h6" className='fst-italic text-center'>"{beer.tagline.replace('.', '')}"</Card.Text>
-                    <Badge className='badge-custom fs-5'>{beer.ph}°</Badge>
+                    <Badge className='badge-custom fs-5'>{beer.abv}°</Badge>
 
 
                 </Card.Body>
@@ -40,14 +40,16 @@ function CardBeer(props) {
                 <Card.Body className='p-0'>
                     
                         <div className="d-grid gap-2">
-                            <Link to={`/beer/${beer.id}`} className='btn-custom text-uppercase text-center text-decoration-none fs-4'>
+                            <Link to={`/beer/${beer.id}`} className='btn-custom py-2 text-uppercase text-center text-decoration-none fs-4'>
                                 Show
                             </Link>
                         </div>
                     
 
                 </Card.Body>
-                <Card.Footer style={{ color: '#383838' }} className="d-flex justify-content-end fw-bold">{beer.ph}°</Card.Footer>
+                <Card.Footer style={{ color: '#383838' }} className="d-flex justify-content-end fw-bold">
+                    <small className='text-muted'>Since: {beer.first_brewed}</small>
+                    </Card.Footer>
             </Card>
         </div>
     )

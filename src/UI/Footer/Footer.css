@@ -1,0 +1,10 @@
+.footer-custom{
+    background: #212529;
+}
+
+.nav-link{
+    color: var(--color-orange);
+}
+.nav-link:hover{
+    color: var(--color-white);
+}
