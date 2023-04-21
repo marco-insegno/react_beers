@@ -35,11 +35,8 @@ function Home() {
 
                     return (
 
-                        <div className="col-12 col-md-4 mb-4" key={beer.id}>
+                            <CardBeer beer={beer} key={beer.id} />
 
-                            <CardBeer beer={beer} />
-
-                        </div>
                     )
                 })}
             </div>
