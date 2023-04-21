@@ -13,6 +13,8 @@ function PricingTab() {
 
     const [beers, setBeers] = useState([])
 
+    const[search, setSearch] = useState('')
+
     useEffect(() => {
 
         fetch('https://api.punkapi.com/v2/beers/')
@@ -21,8 +23,9 @@ function PricingTab() {
 
     }, [])
 
-    return (
 
+    return (
+        
         <section className="container mt-5">
 
             <div className="row">
@@ -34,15 +37,16 @@ function PricingTab() {
             </div>
 
             <div className="row d-flex justify-content-end my-3">
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-3">
                     <Form className="d-flex">
                         <Form.Control
                             type="search"
-                            placeholder="Search..."
+                            placeholder="Search beer..."
                             className="me-2"
                             aria-label="Search"
+                            onChange={(e) => setSearch(e.target.value)}
                         />
-                        <button className='btn btn-custom-2'>Search</button>
+                        
                     </Form>
                 </div>
             </div>
@@ -60,7 +64,13 @@ function PricingTab() {
                         </thead>
                         <tbody>
 
-                            {beers && beers.map((beer) => {
+                            {beers && beers.filter((beer)=> {
+
+                                return search.toLowerCase() === '' 
+                                ? beer 
+                                : beer.name.toLowerCase().includes(search)
+
+                            }).map((beer) => {
 
                                 return (
 
