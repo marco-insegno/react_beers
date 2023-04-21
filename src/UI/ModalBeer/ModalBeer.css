@@ -1,0 +1,33 @@
+.modal-body-custom{
+    height: 60vh;
+    background:linear-gradient(rgba(255, 255, 255, 0.8),rgb(255, 255, 255, 0.7)),url('../../../public/img/bg-modal.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.abv-modal{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--color-orange);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.food-pairing-modal{
+    background: #e66a05eb;
+    color: var(--color-white);
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+
+.modal-footer-custom,
+.modal-header-custom{
+    background:var(--color-dark);
+}
+
