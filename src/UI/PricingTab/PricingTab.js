@@ -10,7 +10,7 @@ function PricingTab() {
 
     const [beers, setBeers] = useState([])
 
-    const[search, setSearch] = useState('')
+    const [search, setSearch] = useState('')
 
     useEffect(() => {
 
@@ -20,9 +20,10 @@ function PricingTab() {
 
     }, [])
 
+    console.log(beers);
 
     return (
-        
+
         <section className="container mt-5">
 
             <div className="row">
@@ -34,7 +35,7 @@ function PricingTab() {
             </div>
 
             <div className="row d-flex justify-content-end my-3">
-            <div className="col-12 col-md-3">
+                <div className="col-12 col-md-3">
                     <Form className="d-flex">
                         <Form.Control
                             type="search"
@@ -43,11 +44,11 @@ function PricingTab() {
                             aria-label="Search"
                             onChange={(e) => setSearch(e.target.value)}
                         />
-                        
+
                     </Form>
                 </div>
             </div>
-            
+
             <div className="row">
                 <div className="col-12">
 
@@ -62,11 +63,11 @@ function PricingTab() {
                         </thead>
                         <tbody>
 
-                            {beers && beers.filter((beer)=> {
+                            {beers && beers.filter((beer) => {
 
-                                return search.toLowerCase() === '' 
-                                ? beer 
-                                : beer.name.toLowerCase().includes(search)
+                                return search.toLowerCase() === ''
+                                    ? beer
+                                    : beer.name.toLowerCase().includes(search)
 
                             }).map((beer) => {
 

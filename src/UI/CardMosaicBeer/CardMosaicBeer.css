@@ -1,0 +1,23 @@
+.box-beer:hover{
+    
+}
+
+.box-description{
+    opacity: 0;
+    
+}
+
+.box-description:hover{
+    opacity: 1;
+    background-color: #e66a05c9;
+    cursor: pointer;
+}
+
+.box-description p, h5, a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+
+

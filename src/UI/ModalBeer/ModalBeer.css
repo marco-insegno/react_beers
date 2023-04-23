@@ -1,10 +1,8 @@
-.modal-body-custom{
+.modal-body-custom {
     height: 60vh;
-    background:linear-gradient(rgba(255, 255, 255, 0.8),rgb(255, 255, 255, 0.7)),url('../../../public/img/bg-modal.jpg');
-    background-size: cover;
-    background-position: center;
 }
-.abv-modal{
+
+.abv-modal {
     width: 35px;
     height: 35px;
     position: absolute;
@@ -18,7 +16,7 @@
     border-radius: 50%;
 }
 
-.food-pairing-modal{
+.food-pairing-modal {
     background: #e66a05eb;
     color: var(--color-white);
     text-align: center;
@@ -27,7 +25,6 @@
 }
 
 .modal-footer-custom,
-.modal-header-custom{
-    background:var(--color-dark);
+.modal-header-custom {
+    background: var(--color-dark);
 }
-

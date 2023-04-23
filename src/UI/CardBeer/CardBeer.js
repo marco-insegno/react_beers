@@ -12,7 +12,7 @@ function CardBeer(props) {
 
     return (
 
-        <div className="col-12 col-md-4 mb-4" >
+        <div className="col-12 col-md-4 mb-4">
             <Card className="card-custom">
                 <Card.Header>
                     <div

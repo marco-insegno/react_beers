@@ -32,7 +32,13 @@ function ModalBeer(props) {
                 <Modal.Header closeButton className="modal-header-custom">
 
                 </Modal.Header>
-                <Modal.Body className="d-flex justify-content-evenly modal-body-custom">
+                <Modal.Body 
+                className="d-flex justify-content-evenly modal-body-custom" style={{ 
+                    background: `linear-gradient(rgba(255, 255, 255, 0.8),rgb(255, 255, 255, 0.7)),url(${beer.image_url})`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundSize:'auto'
+                }}>
 
                     <div className="position-relative col-6">
                         <img src={beer.image_url} alt={beer.name} height='100%' className='ms-5'/>
